@@ -1,3 +1,6 @@
+1.6
+- Updated for 9.6
+- Added ForceCreateViews Attributes to properly update tooltips.
 1.5
 - Updated for Eco 9.5 (Do not use if you still sit in 9.4)
 - Removed CrushedMixedRock (delete this file as it will cause a crash/no start issue due to item is fixed in vanilla Eco)
