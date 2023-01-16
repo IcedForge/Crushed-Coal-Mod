@@ -28,7 +28,7 @@ namespace Eco.Mods.TechTree
     /// <summary>Auto-generated class. Don't modify it! All your changes will be wiped with next update! Use Mods* partial methods instead for customization.</summary>
 
     [Serialized]
-    [Minable(1), Solid,Wall]
+    [Minable(1), Solid, Wall]
     public partial class CoalBlock :
         Block
         , IRepresentsItem
@@ -41,11 +41,10 @@ namespace Eco.Mods.TechTree
     [MaxStackSize(20)]
     [Weight(4000)]
     [ResourcePile]
-    [Ecopedia("Natural Resources", "Ore", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]
-    [Currency][Tag("Currency")]
+    [Ecopedia("Natural Resources", "Ore", createAsSubPage: true)]
     [Tag("Excavatable", 1)]
     public partial class CoalItem :
- 
+
     BlockItem<CoalBlock>
     {
         public override LocString DisplayNamePlural { get { return Localizer.DoStr("Coal"); } }
@@ -59,12 +58,12 @@ namespace Eco.Mods.TechTree
             typeof(CoalStacked3Block),
             typeof(CoalStacked4Block)
         };
-        
+
         public override Type[] BlockTypes { get { return blockTypes; } }
     }
 
     [Serialized, Solid] public class CoalStacked1Block : PickupableBlock { }
     [Serialized, Solid] public class CoalStacked2Block : PickupableBlock { }
     [Serialized, Solid] public class CoalStacked3Block : PickupableBlock { }
-    [Serialized, Solid,Wall] public class CoalStacked4Block : PickupableBlock { } //Only a wall if it's all 4 Coal
+    [Serialized, Solid, Wall] public class CoalStacked4Block : PickupableBlock { } //Only a wall if it's all 4 Coal
 }
