@@ -1,3 +1,7 @@
+1.7
+- Updated for 9.7
+- Fixed ecopedia attribute changes.
+- Included all standard code commentary from SLG autogen for modding the files.
 1.6
 - Updated for 9.6
 - Added ForceCreateViews Attributes to properly update tooltips.
